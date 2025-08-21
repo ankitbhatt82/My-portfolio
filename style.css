@@ -1,0 +1,362 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  background-color: hsl(240deg 10% 3.92%);
+}
+
+h1, h2, h3 {
+  color: rgb(218, 223, 228);
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, li {
+  color: rgb(173, 184, 194);
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  height: 8px;
+  background-color: white;
+  border: none;
+  margin: 20px 0;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(2 2 20);
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.nav-head h2 {
+  font-size: 50px;
+}
+
+.nav-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-btn button {
+  height: 40px;
+  min-width: 100px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  margin: 8px;
+  background-color: rgb(2, 2, 25);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+}
+
+.nav-btn button:hover {
+  scale: 1.05;
+  color: rgb(175, 207, 210);
+  background-color: rgb(1, 1, 17);
+}
+
+/* Intro */
+.intro {
+  margin: 20px;
+}
+
+.intro h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-about {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.intro-about p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* .intro-pic img {
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(170, 168, 192, 0.8);
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+} */
+
+/* Education */
+.edu-qual {
+  margin: 20px;
+}
+
+.edu-head h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edu-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.edu-ug {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.edu-ug h1 {
+  font-size: 24px;
+}
+.edu-ug p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Skills */
+.my-skills {
+  margin: 20px;
+}
+
+.skill h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.my-skills p {
+  font-size: 18px;
+}
+
+.my-skills img {
+  height: 60px;
+}
+
+.tech-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.tech-skills > div {
+  text-align: center;
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.tech-skills > div:nth-child(1) { animation-delay: 0s; }
+.tech-skills > div:nth-child(2) { animation-delay: 0.3s; }
+.tech-skills > div:nth-child(3) { animation-delay: 0.9s; }
+.tech-skills > div:nth-child(4) { animation-delay: 2.1s; }
+.tech-skills > div:nth-child(5) { animation-delay: 0.6s; }
+.tech-skills > div:nth-child(6) { animation-delay: 1.5s; }
+.tech-skills > div:nth-child(7) { animation-delay: 1.8s; }
+.tech-skills > div:nth-child(8) { animation-delay: 1.2s; }
+
+/* Experience */
+.exp {
+  margin: 20px;
+}
+.experience {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+}
+.exp h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.experience h2 {
+  font-size: 24px;
+}
+.experience h3 {
+  font-size: 20px;
+}
+.experience li {
+  font-size: 18px;
+}
+
+/* Projects */
+.project {
+  margin: 20px;
+}
+.project-main-head h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ffc, .wsw, .netflix-clone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 15px;
+}
+
+.project-head {
+  flex: 1 1 250px;
+}
+.project-head h2 {
+  font-size: 24px;
+}
+.project-head p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.project-btn {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+}
+
+.project-btn button {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(2 2 20);
+  color: white;
+  box-shadow: 0 0 10px white;
+  transition: 0.3s;
+}
+/* .project-btn button:hover {
+  background: #333;
+} */
+
+.project-btn a button{
+    cursor: pointer;
+}
+.project-btn a button:hover {
+    background-color: #422f89;
+    color: white;
+}
+
+/* Contact */
+.contact {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #1c1c1c;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-left, .form-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 250px;
+}
+
+input, textarea {
+  background: #2a2a2a;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-left button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.form-left button:hover {
+  background: #333;
+}
+
+/* Footer / Connect */
+.connect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #b7b7b7;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+.connect img {
+  height: 40px;
+}
+.connect p {
+  font-size: 18px;
+  margin: 10px;
+}
+.gmailid {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.develop {
+  text-align: center;
+  flex: 1 1 100%;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .nav-head h2 { font-size: 40px; }
+  .intro-pic img { height: 280px; }
+  .tech-skills img { height: 50px; }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .nav-bar { flex-direction: column; text-align: center; }
+  .nav-head h2 { font-size: 30px; }
+  .intro h1, .edu-head h1, .skill h1, .exp h1, .project-main-head h1 { font-size: 28px; }
+  .intro-about p, .edu-ug p, .experience li, .project-head p { font-size: 16px; }
+  .intro-pic img { height: 200px; }
+  .project-btn button { font-size: 14px; padding: 8px 12px; }
+}
