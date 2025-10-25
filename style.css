@@ -225,6 +225,7 @@ hr {
   gap: 15px;
 }
 
+
 .project-head {
   flex: 1 1 250px;
 }
@@ -360,4 +361,5 @@ input, textarea {
   .intro-pic img { height: 200px; }
   .project-btn button { font-size: 14px; padding: 8px 12px; }
 }
+
 
